@@ -37,7 +37,7 @@ A modern, responsive IT support business website with real-time chat, service li
 
 1. **Clone Repository**
    ```bash
-   git clone https://github.com/yourusername/it-support-website.git
+   git clone https://github.com/hetrox8/hetroxity.corporation-IT-Support.git
    cd it-support-website
 
     Install Dependencies
