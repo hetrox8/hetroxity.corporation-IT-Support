@@ -1,0 +1,52 @@
+<%- include('partials/header') %>
+<section class="contact-hero py-5 bg-primary text-white">
+  <div class="container text-center">
+    <h1 class="display-4 mb-4">Get in Touch</h1>
+    <p class="lead">We're here to help 24/7</p>
+  </div>
+</section>
+
+<section class="contact-section py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <div class="contact-info">
+          <h3 class="mb-4">Contact Details</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <i class="fas fa-phone me-2"></i>
+              <a href="tel:+1234567890" class="text-dark">+1 (234) 567-890</a>
+            </li>
+            <li class="mb-3">
+              <i class="fas fa-envelope me-2"></i>
+              support@techsupportpro.com
+            </li>
+            <li class="mb-3">
+              <i class="fas fa-map-marker-alt me-2"></i>
+              123 Tech Street, Silicon Valley, CA
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <form action="/contact" method="POST">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea name="message" class="form-control" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<%- include('partials/footer') %>

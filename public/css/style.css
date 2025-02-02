@@ -1,0 +1,75 @@
+:root {
+  --primary-color: #2962ff;
+  --secondary-color: #455a64;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-section {
+  padding: 100px 0;
+}
+
+.card {
+  transition: transform 0.3s;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 12px 30px;
+}
+
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Pricing Section */
+.pricing-card {
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary-color);
+}
+
+.pricing-card.featured {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+/* Contact Form */
+.contact-section form {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Service Icons */
+.service-icon {
+  color: var(--primary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .pricing-card.featured {
+    transform: scale(1);
+  }
+}
